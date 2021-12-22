@@ -1,9 +1,10 @@
 {
   "name": "iter-ops",
-  "version": "1.4.7",
+  "version": "1.4.8-beta.0",
   "description": "Basic operations on iterables",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "clean": "del /s/q .\\test\\*.js && del /s/q .\\src\\*.js && rd /s/q .\\dist",
     "build": "tsc -p src",
