@@ -98,7 +98,7 @@ export type AnyIterable<T> = Iterable<T> | AsyncIterable<T>;
 /**
  * Any-Iterator Type.
  */
-export type AnyIterator<T> = Iterator<T> | AsyncIterator<T>;
+export type AnyIterator<T> = Iterator<T, T> | AsyncIterator<T, T>;
 
 /**
  * Any Iterable Iterator.
@@ -115,7 +115,7 @@ export interface Operation<T, R> {
 /**
  * Any synchronous value type.
  */
-export type AnySync<T> = T | Iterator<T> | Iterable<T>;
+export type AnySync<T> = T | Iterator<T, T> | Iterable<T>;
 
 /**
  * Any synchronous or asynchronous value type.
