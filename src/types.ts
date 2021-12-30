@@ -133,6 +133,11 @@ export type Any<T> = AnySync<T> | AsyncIterator<T> | AsyncIterable<T>;
 export type IterationState = {[name: string]: any};
 
 /**
+ * A Typed array.
+ */
+export type TypedArray = ArrayBufferView & ArrayLike<unknown>;
+
+/**
  * These are for code abbreviation + smaller bundles:
  */
 export const $S: typeof Symbol.iterator = Symbol.iterator;
